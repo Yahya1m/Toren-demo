@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+</head>
+<body>
+    <ul style="display: flex; justify-content: space-between; background-color: aquamarine;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <h2>Reservation Form</h2>
+    <form action="#" method="POST">
+        <table>
+            <tr>
+                <td><label>Date:</label></td>
+                <td><input type="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label>Time:</label></td>
+                <td><input type="time" name="time" required></td>
+            </tr>
+            <tr>
+                <td><label>Location:</label></td>
+                <td>
+                    <select name="service" required>
+                        <option value="">Select Location</option>
+                        <option value="Westland">Westland</option>
+                        <option value="Parkland">Parkland</option>
+                        <option value="Eastleigh">Eastleigh</option>
+                        <option value="South C">South C</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Service/Event:</label></td>
+                <td>
+                    <select name="service" required>
+                        <option value="">Select Service/Event</option>
+                        <option value="Restaurant Reservation">Restaurant Reservation</option>
+                        <option value="Hotel Booking">Hotel Booking</option>
+                        <option value="Salon Appointment">Salon Appointment</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Name:</label></td>
+                <td><input type="text" name="name" placeholder="Enter Your Name"></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email"  placeholder="Enter Your Email" required></td>
+            </tr>
+            <tr>
+                <td><label>Phone:</label></td>
+                <td><input type="text" placeholder="Enter Your Phone" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Additional Information:</label><br>
+                    <textarea name="additional_info" rows="4" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
